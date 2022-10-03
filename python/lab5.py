@@ -6,10 +6,14 @@ print (randnum)
 print ('Random number game! What is your guess?')
 usrguess = int(input())
 
-if usrguess > randnum :
-    print('Your guess is too high. Try again next time loser.')
-elif usrguess < randnum :
-    print('Your guess is too low. Try agin next time loser.')
+
+while randnum != usrguess :
+    if usrguess > randnum :
+        print('Your guess is too high. Try again.')
+        usrguess = int(input())
+    elif usrguess < randnum :
+        print('Your guess is too low. Try agin.')
+        usrguess = int(input())
 else :
     print('Good job!! You are good at guessing a number')
 
