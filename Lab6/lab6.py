@@ -15,8 +15,8 @@ print(Back.RED + 'Text with a red background')
 
 # Style changes the style of text
 
-print('style commands only work in lnux')
-
+print(Fore.GREEN + 'style commands only work in lnux, use BRIGHT and DIM to make text change style')
+print()
 print(Fore.RED + 'To close press enter')
 n = input()
 
