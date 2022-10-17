@@ -6,7 +6,7 @@ Colorama is a python package that allowes someone to change the color of thier t
 ## Install Colorama
 
 To install colorama use:
-> pip add colorama
+> pip install colorama
 
 Then run my Lab6.py script to see the 3 use cases. Comments inside of the py script on what each of the commands does. Some of the commands featured are:
 
