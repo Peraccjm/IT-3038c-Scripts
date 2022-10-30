@@ -1,9 +1,18 @@
 # Project 1
-## Time Script in Python
-## Peraccjm
+## Startup Script in Python, peraccjm
 
-The goal of this script is to retrieve the time in epoch and then convert to a human readable format. Then display both Human readable and epoch.
+### Description
 
-Run using python on your pc. 
+The goal of this script is to retrieve the time in epoch and then convert to a human readable format. Then display both Human readable and epoch. Then it collects system information and displays that information. Use on Windows.
 
+### How to run
+
+First install psutil.
+>pip install psutil
+
+This can be done in a virtual enviroment or directly on the PC.
+
+Then Run using python on your pc. 
+
+### Use Case
 Can setup as a start up task to display every time PC is turned on.
