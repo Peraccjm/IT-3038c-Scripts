@@ -16,3 +16,10 @@ Then Run using python on your pc.
 
 ### Use Case
 Can setup as a start up task to display every time PC is turned on.
+
+### Sources
+https://pypi.org/project/psutil/
+
+https://psutil.readthedocs.io/en/latest/
+
+https://www.geeksforgeeks.org/how-to-get-current-cpu-and-ram-usage-in-python/
