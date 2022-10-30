@@ -1,4 +1,4 @@
-# Project 1
+# Project 2
 ## Startup Script in Python, peraccjm
 
 ### Description
