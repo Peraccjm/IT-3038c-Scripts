@@ -3,7 +3,7 @@
 
 ### Description
 
-The goal of this script is to retrieve the time in epoch and then convert to a human readable format. Then display both Human readable and epoch. Then it collects system information and displays that information over a 5 second period. The script then determins the latitude and longitude from the devices IP address. It then takes this information to determine the location of the device in the world. It then takes that data that it has found and inputs it into a query for the OpenWeatherMap API to retreave some useful weather information to start your day. Use on Windows only.
+The goal of this script is to retrieve the time in epoch and then convert to a human readable format. Then display both Human readable and epoch. Then it collects system information and displays that information over a 5 second period. The script then determins the latitude and longitude from the devices IP address. It then takes this information to determine the location of the device in the world. It then takes that data that it has found and inputs it into a query for the OpenWeatherMap API to retrieve some useful weather information to start your day. Use on Windows only.
 
 ### How to run
 
