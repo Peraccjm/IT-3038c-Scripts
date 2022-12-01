@@ -24,7 +24,7 @@ This can be done in a virtual enviroment or directly on the PC.
 Then Run using python on your windows pc. 
 
 ### Use Case
-Can setup as a start up task to display every time PC is turned on.
+Can setup as a start up task to display every time PC is turned on and displays this usefull information when you first login to your PC for Work or School.
 
 ### Sources
 https://pypi.org/project/psutil/
