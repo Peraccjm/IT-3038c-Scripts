@@ -8,30 +8,30 @@ from geopy.geocoders import Nominatim
 epoch = time.time()
 
 ctime = time.ctime(epoch)
-CPU = psutil.cpu_percent(5)
+CPU = psutil.cpu_percent(5) # Collects CPU usage for 5 seconds
 RAMp = psutil.virtual_memory()[2]
 RAMgb = psutil.virtual_memory()[4] / 1000000000
 disk = psutil.disk_usage('/') [3]
 diskgb = psutil.disk_usage('/')[1] / 1000000000
 print()
 
-print("The Current time is :", ctime)
+print("The Current time is :", ctime) #Prints the current time
 print("The current time since epoch (in seconds) is :", epoch)
 
 print()
 
-print('The CPU usage is: ', CPU)
+print('The CPU usage is: ', CPU)  #Prints all of the system information
 print('Ram used : ', RAMp,'%' )
 print('RAM used in GB :', RAMgb, "GB")
 print('Total Disk used on disk C:' , diskgb ,'GB')
 print('Disk space used on disk C:' , disk ,'%')
 print()
 
-g =geocoder.ip('me')
+g =geocoder.ip('me') # This retrieves the Lat and Long
 data1 = g.latlng
 print("The current latitude and longitude of this device is: ", data1)
 
-geolocator = Nominatim(user_agent="me")
+geolocator = Nominatim(user_agent="me") #Initializes the API
 
 location = geolocator.reverse(data1)
 print("The current location of this device is: " , location)
@@ -43,11 +43,11 @@ zipnew = zipc.rstrip(',')
 print()
 
 zip = zipnew
-r = requests.get('http://api.openweathermap.org/data/2.5/weather?zip=%s,us&appid=4e54ca6c84e78554467ec14acfadecce' % zip)
+r = requests.get('http://api.openweathermap.org/data/2.5/weather?zip=%s,us&appid=4e54ca6c84e78554467ec14acfadecce' % zip) #API request
 data =r.json()
 print("The weather right now in", zipnew, "is", data['weather'][0]['description'])
 ktemp = data['main']['temp']
-ftemp = int((ktemp - 273.15) * (9/5) + 32)
+ftemp = int((ktemp - 273.15) * (9/5) + 32) #Converts from Kelvin to Fahrenheit
 print("The tempature in Fahrenheit is:", ftemp)
 print("The humidity is:" ,data['main']['humidity'],"%")
 
@@ -55,7 +55,7 @@ print("The humidity is:" ,data['main']['humidity'],"%")
 
 
 print()
-print("press enter to close")
+print("press enter to close") #Closes the window
 t = input()
 
 
